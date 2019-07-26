@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+    <title>admin dashboard</title>
+</head>
+<body>
+   
+        <div class="sidenav">
+                <button class="tablinks" onclick="openadmin(event, 'user')" id="defaultOpen">User</button>
+                <button class="tablinks" onclick="openadmin(event, 'Device')" >Device</button>
+                <button class="tablinks" onclick="openadmin(event, 'Device_types')" >Device-types</button>
+              </div>
+
+              <!-- User  dashboard functions -->
+        <div id="user" class="tabcontent">
+                <div class="button1">
+                    <button id="myButton" onclick="location.href ='add_user.html'" >Add user</button>
+                </div>
+                <div class = "main">
+                    <table>
+                       
+                        <th class="headTable">
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>E-mail</td>
+                        </th>
+                       
+                       <tr>
+                           <td id= name ></td>
+                           <td id= secName></td>
+                           <td id= emailid></td>
+                           <td> <button id="editButton" >Edit</button></td>
+                           <td><button id="deleteButton">Delete</button></td>
+                       </tr>
+                    </table>
+                </div>
+            </div>
+           
+
+                <!-- Device Dashboard functions -->
+        <div id="Device" class="tabcontent">
+                <div>
+                    <button id="myButton" onclick="location.href = 'add-device.html'"  >Add device</button>
+                        
+                </div>
+                <div class = "main">
+                    <table>
+                        <th>
+                            <td>Id</td>
+                            <td>Name</td>
+                            <td>Status</td>
+                            <td>Serial No.</td>
+                            <td>Device type</td>
+                        </th>
+                        <tr>
+                            <td id= dname ></td>
+                            <td id= status></td>
+                            <td id= sNo></td>
+                            <td id= dType></td>
+                            <td> <button id="editButton" onclick="editUser">Edit</button></td>
+                            <td><button id="deleteButton" >Delete</button></td>
+                        </tr>
+                    </table>
+                </div>
+                    
+        </div>
+ 
+ 
+        <!-- Device types dashboard functions -->
+        <div id="Device_types" class="tabcontent">
+                <div>
+                    <button id="myButton" onclick="location.href='add-deviceType.html'" >Add device type</button>
+                </div>
+                <div class = "main">
+                    <table>
+                        <th>
+                            <td>Id</td>
+                            <td>Name</td>
+                            <td>Status</td>
+                                   
+                        </th>
+                        <tr>
+                            <td id= dtname ></td>
+                            <td id= dtstatus></td>
+                            <td> <button id="editButton" >Edit</button></td>
+                            <td><button id="deleteButton">Delete</button></td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+                 
+     </body>
+     <script src="dashboard1.js"></script>
+</html>

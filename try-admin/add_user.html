@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="register.css">
+  
+    <title>Add user page</title>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Add user</h1>
+        <form method="POST" name="vform" onsubmit="submitRegisterForm()">
+            <div class="innerbox">
+                <input type="text" id="firstName" name="firstName" class="textInput" placeholder="First name">
+                <div id="firstName_error" class="val_error" ></div>
+
+                <input type="text" id="lastName" name="lastName" class="textInput" placeholder="Last name">
+                <div id="lastName_error" class="val_error" ></div>
+
+                <input type="email" id="email" name="email" class="email" placeholder="Email">
+                <div id="email_error" class="val_error" ></div>
+
+
+                <button class="button" id = "myButton" type="submit"  >Submit </button>
+        </form>
+    </div>
+
+    <script src="add_user.js"></script>
+    
+</body>
+
+</html>

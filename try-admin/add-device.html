@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <title>Add Device</title>
+</head>
+<body>
+        <form method="POST"  name="vform" onsubmit="addingDevice()">
+                <div class="innerbox">
+                        <input type="text" id="deviceName" name="Device Name" class="textInput" placeholder="Device Name">
+                        
+
+                        <select name="Status" id="Status">
+                                <option value="active">Active</option>
+                                <option value="deactive">Deactive</option>
+                        
+                        
+    
+                        <input type="text" id="serialNo" name="serialNo" class="textInput" placeholder="Serial no." >
+                        <div id="email_error" class="val_error"></div>
+               
+                        
+                        <select name="Device Type" id="deviceType">
+                                <option value="iot">iot</option>
+                                <option value="node server">Node Server</option>
+                                <option value="Mobile">Mobile</option>
+                        </select>
+                        
+                    
+               
+                <button class="button" type="submit" id="add_device" >Add Device </button>
+                
+               
+            </form>
+
+
+             <!-- adding javascript code -->
+
+        <script src="add-device.js">
+         
+         </script>
+
+</body>
+</html>                 

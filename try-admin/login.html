@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="login.css"> 
+    <title>Login page</title>
+</head>
+<body>
+    <div class= "box">
+        <h1>Login</h1>
+        <form method="POST"  onsubmit="loginForm()" name="v1form">
+            <div class="innerbox">
+
+
+                
+                <input type="email" id="email" name="email" class="email" placeholder="Email">
+                    <div id="email_error" class="val_error"></div>
+           
+                    <input type="password" id="password" name="password" class="textInput" placeholder="Password">
+                    <div id="password_error" class="val_error"></div>
+                    
+                    
+                
+           
+           
+            <button class="button" type="submit" >Submit      </button>
+            <button onclick="location.href='register.html'">Register</button>
+        </form>
+    </div>
+    
+
+<script src="login.js"></script>
+
+</body>
+</html>
